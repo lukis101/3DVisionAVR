@@ -1,0 +1,17 @@
+## Ignore Atmel/Visual Studio temporary files and build results
+
+.vs/
+*.componentinfo.xml
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+[Bb]uild/
+[Oo]bj/
+*.bin
+*.eep
+*.elf
+*.hex
+*.lss
+*.map
+*.sym
