@@ -23,11 +23,15 @@ const IR_Protocol_t IRProt_Xpand = {
 	.indices = { 0,0, 5,0 },
 	.timings = { 18,20,18,20,18,  18,60,18 }
 };
+
+// For 3D Vision only, indexed in this order:
+// [0]: Close left eye  [1] Open right eye
+// [2]: Close right eye [3]: Open left eye
 const IR_Protocol_t IRProt_3DVision = {
-	.sizes   = { 3,3, 1,3 },
-	.indices = { 0,3, 6,7 },
-	.timings = { 23,46,31,  23,78,40, 
-	             43,        23,21,24 }
+	.sizes   = { 3,3, 3,1 },
+	.indices = { 0,3, 6,9 },
+	.timings = { 23,21,24,  23,46,31,
+	             23,78,40,  43 }
 };
 const IR_Protocol_t IRProt_Sharp = {
 	.sizes   = { 15,0, 15,0 },
